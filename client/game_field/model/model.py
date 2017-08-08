@@ -1,8 +1,9 @@
+from person import Person
 
 
-class IModel(object):
-    pass
+class Model(object):
+    __slots__ = ['player', 'enemy']
 
-
-class Model(IModel):
-    pass
+    def __init__(self):
+        self.player = Person()
+        self.enemy = Person()
